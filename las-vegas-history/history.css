@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Roboto Condensed", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hoved tittel */
+h2 {
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+}
+
+/* Hoved kontainer, 3 sub kontainere inn */
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+
+/* Sub kontainer (selve kortet) */
+.sub-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-y: hidden;
+  width: 25%;
+  height: 100%;
+  box-shadow: 0 1.125rem 1.25rem rgba(0, 0, 0, 0.375);
+  border-radius: 10px;
+}
+
+/* Innhold kontainer, tekst og dato */
+.content-container {
+  display: flex;
+  padding: 0 2% 70px;
+  margin-top: -13rem;
+}
+
+/* text Paragrafen */
+p {
+  margin-top: 17rem;
+  line-height: 1.5rem;
+}
+
+/* Dato(år) */
+span {
+  margin-top: 17rem;
+  margin-right: 2rem;
+  margin-left: 1rem;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+/* Dato under linje */
+.date-underline {
+  position: absolute;
+  border-bottom: 5px solid #e81f76;
+  width: 5rem;
+  margin-left: 0.5rem;
+  margin-top: 19.5rem;
+}
+
+/* Media Query for skjermoppløsning under 950px */
+@media (max-width: 950px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sub-container {
+    width: 70%;
+    margin-bottom: 2rem;
+  }
+}
