@@ -52,16 +52,9 @@ span {
   margin-right: 2rem;
   margin-left: 1rem;
   font-weight: bolder;
+  height: 2.5rem;
   font-size: 2rem;
-}
-
-/* Dato under linje */
-.date-underline {
-  position: absolute;
   border-bottom: 5px solid #e81f76;
-  width: 5rem;
-  margin-left: 0.5rem;
-  margin-top: 19.5rem;
 }
 
 /* Media Query for skjermoppløsning under 950px */
