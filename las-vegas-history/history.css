@@ -76,3 +76,34 @@ span {
     margin-bottom: 2rem;
   }
 }
+
+/* Knapp kontainer */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -3rem;
+}
+
+.top-btn {
+  margin-bottom: 1rem;
+}
+
+/* Hjem knappen og topp knappen*/
+.home-btn,
+.top-btn {
+  padding: 5px;
+  background: rgb(37, 231, 231);
+  border: 1px solid rgb(54, 159, 159);
+  text-decoration: none;
+  color: #000;
+  border-radius: 10px;
+  font-size: large;
+  transition: all 0.2s ease-in-out;
+}
+
+.home-btn:hover,
+.top-btn:hover {
+  background: cyan;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.05);
+}
