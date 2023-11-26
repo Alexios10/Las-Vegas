@@ -99,6 +99,7 @@ span {
   border-radius: 10px;
   font-size: large;
   transition: all 0.2s ease-in-out;
+  opacity: 0.9;
 }
 
 .home-btn:hover,
@@ -106,4 +107,5 @@ span {
   background: cyan;
   transition: all 0.2s ease-in-out;
   transform: scale(1.05);
+  opacity: 1;
 }
