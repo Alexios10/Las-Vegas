@@ -1,13 +1,18 @@
+@font-face {
+  font-family: RobotoCondensed;
+  src: url(../RobotoCondensed.ttf);
+}
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: RobotoCondensed, sans-serif;
   transition: all 0.3s ease-in-out;
 }
 
-/* Hoved tittel */
+/* Hoved tittelen */
 h2 {
   display: flex;
   justify-content: center;
@@ -31,6 +36,7 @@ h2 {
   height: 100%;
   box-shadow: 0 1.125rem 1.25rem rgba(0, 0, 0, 0.375);
   border-radius: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Innhold kontainer, tekst og dato */
@@ -65,13 +71,14 @@ span {
   }
 
   .sub-container {
-    width: 70%;
+    width: 50%;
     margin-bottom: 2rem;
+    transition: all 0.3s ease-in-out;
   }
 }
 
 /* Knapp kontainer */
-.btn-container {
+#btn-container {
   display: flex;
   justify-content: center;
   margin-bottom: -3rem;
