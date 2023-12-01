@@ -1,0 +1,252 @@
+body {
+  background-color: rgb(41, 39, 39);
+  scroll-behavior: smooth;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+/*Background image*/
+.View {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+}
+/* This is the title texts for the website*/
+.TopText {
+  position: absolute;
+  font-family: sans-serif;
+  align-items: center;
+  justify-content: center;
+  top: 10%;
+  left: 35%;
+  color: rgb(196, 154, 17);
+  font-size: 200%;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 20px;
+  border-color: rgb(41, 41, 41);
+  background-color: rgb(41, 41, 41);
+}
+
+.BottomText {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  top: 30%;
+  left: 41%;
+  color: rgb(255, 255, 255);
+  font-size: 100%;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 20px;
+  border-color: rgb(41, 41, 41);
+  background-color: rgb(41, 41, 41);
+}
+/* This the the class for the home page*/
+.Home {
+  position: absolute;
+  font-family: sans-serif;
+  align-items: center;
+  justify-content: center;
+  top: 31.5%;
+  left: 35%;
+  color: rgb(196, 154, 17);
+  font-size: 100%;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 20px;
+  border-color: rgb(41, 41, 41);
+  background-color: rgb(41, 41, 41);
+}
+/* Rain effect*/
+.Rain {
+  opacity: 15%;
+  width: 100%;
+}
+/* This is the plane that moves across the website*/
+.Plane {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  left: -10%;
+  width: 8%;
+  top: 1%;
+  opacity: 30%;
+  animation-name: Flying;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 5s;
+}
+
+/* Icon and text for the Dam*/
+.Dam {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 8%;
+  left: 20%;
+  top: 45%;
+  opacity: 90%;
+  animation-name: SmallPulse;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.DamText {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  left: 700%;
+  top: 65%;
+  color: rgb(255, 255, 255);
+  font-size: 100%;
+  opacity: 100%;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: rgb(41, 41, 41);
+  background-color: rgb(41, 41, 41);
+}
+/* Icon and text for the house*/
+.House {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 8%;
+  left: 44%;
+  top: 45%;
+  opacity: 80%;
+  animation-name: SmallPulse;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.HouseText {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  left: 700%;
+  top: 65%;
+  color: rgb(255, 255, 255);
+  font-size: 100%;
+  opacity: 0%;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: rgb(41, 41, 41);
+  background-color: rgb(41, 41, 41);
+}
+/* Icon and text for the sphere*/
+.Sphere {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 8%;
+  left: 70%;
+  top: 47%;
+  opacity: 90%;
+  animation-name: SmallPulse;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.SphereText {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  left: 700%;
+  top: 66%;
+  color: rgb(255, 255, 255);
+  font-size: 100%;
+  opacity: 0%;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: rgb(41, 41, 41);
+  background-color: rgb(41, 41, 41);
+}
+
+/* Hoover effects for all the Icons*/
+
+.Dam:hover {
+  transition-timing-function: ease-in;
+  animation-play-state: paused;
+  width: 9%;
+  transition: 0.4s;
+  left: 19.5%;
+}
+.House:hover {
+  transition-timing-function: ease-in;
+  animation-play-state: paused;
+  width: 9%;
+  transition: 0.4s;
+  left: 43.5%;
+}
+
+.Sphere:hover {
+  transition-timing-function: ease-in;
+  animation-play-state: paused;
+  width: 9%;
+  transition: 0.4s;
+  left: 69.5%;
+}
+/* Hoover effects for all the icons combined with texts*/
+#DamCombo:hover .DamText {
+  width: 30%;
+  left: 40%;
+  top: 62%;
+  transition: 0.3s;
+  opacity: 100%;
+}
+#HouseCombo:hover .HouseText {
+  width: 30%;
+  left: 40%;
+  top: 62%;
+  transition: 0.3s;
+  opacity: 100%;
+}
+#SphereCombo:hover .SphereText {
+  width: 30%;
+  left: 40%;
+  top: 62%;
+  transition: 0.3s;
+  opacity: 100%;
+}
+
+@keyframes Flying {
+  0% {
+    left: -10%;
+  }
+  50% {
+    top: 23%;
+  }
+  100% {
+    left: 110%;
+  }
+}
+
+@keyframes SmallPulse {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(-0.2deg);
+  }
+  50% {
+    transform: rotate(0deg) scale(1.05);
+  }
+  75% {
+    transform: rotate(0.2deg);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}

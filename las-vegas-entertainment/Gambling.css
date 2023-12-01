@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 325%;
+    color: solid rgb(20, 18, 18);
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(red, blue);
+}
+
+h2 {
+    font-size: 285%;
+    display: flex;
+    justify-content: center;
+    color: rgb(38, 38, 116);
+}
+
+.card {
+    background-color:rgb(172, 69, 69);
+    display: flex;
+    justify-content: center;
+    display: initial;
+    border-radius: 10px;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    margin-top: 1%;
+    font-size: 170%;
+}
+
+.content-container {
+    width: 30rem;
+    margin-right: 10rem;
+    border: 2px solid gray;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: rgb(24, 23, 23) 0px 5px 15px;   
+}
+
+#palazzo-venetian {
+    width: 20rem;
+    padding: 5px;
+}
+
+h3 {
+    font-size: 285%;
+    display: flex;
+    justify-content: center;
+    color: rgb(38, 38, 116);
+}
+
+#caesars-palace {
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+}
+
+h4 {
+    font-size: 285%;
+    display: flex;
+    justify-content: center;
+    color: rgb(38, 38, 116);
+}
+
+#bellagio {
+    width: 30rem;
+    padding: 5px;
+}
+
+/* Terniangkasten */
+.dice{
+    margin-left: 50%;
+    margin-top: 10%;
+    width: 120px;
+    height: 120px;
+    border-radius: 5%;
+    background-color: red;
+    border: 3px solid black;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#dot1 { top:40px; left: 40px;}
+#dot2 { top:15px; left: 15px;}
+#dot3 { top:15px; left: 40px;}
+#dot4 { top:15px; right: 15px;}
+#dot5 { top:40px; right: 40px;}
+#dot6 { bottom: 15px; left: 15px;}
+
+.dice:hover {
+    animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin { /* Animasjonen */
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(180deg);
+    }
+}
+
+/* Scrolle opp knappen */
+#scrollToTopBtn {
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+} 

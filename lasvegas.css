@@ -15,20 +15,15 @@ body {
 
 @keyframes imageSlider {
   0%,
-  20% {
+  30% {
     background: url(assets/bg-img3.jpg) no-repeat center / cover fixed;
   }
-  25%,
-  55% {
+  35%,
+  75% {
     background: url(assets/bg-img1.jpg) no-repeat center / cover fixed;
   }
 
-  60%,
-  90% {
-    background: url(assets/bg-img2.jpg) no-repeat center / cover fixed;
-  }
-
-  95%,
+  85%,
   100% {
     background: url(assets/bg-img3.jpg) no-repeat center / cover fixed;
   }
